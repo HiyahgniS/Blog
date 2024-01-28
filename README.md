@@ -20,15 +20,18 @@ An access token is generated after login to store activity.
 Blogs are distributed in various categories(sports, music, fashion, movies, Tech). Users can select whichever category they want.
 Users can also change the image displaying with their blog. 
 Comments can also be done or deleted.
+
 PREREQUISITES
     Node.js and npm installed
     MongoDB installed locally or a MongoDB Atlas account
     Material UI account
 
 Getting Started
+
 npm create-react-app
 
 Setting up MongoDB
+
 If you haven't already, sign up for a MongoDB Atlas account or install MongoDB locally. I used mongoose to run.
 
 Setting up the Backend
@@ -40,13 +43,17 @@ Install dependencies:
 npm install
 
 Configure the environment variables:
+
 Create a .env file in the backend directory and add the following:
-    PORT=8000
+    DB_USERNAME
+    DB_PASSWORD
     MONGODB_URI=your_mongodb_uri
     SECRET_KEY=your_secret_key
+    REFRESH_ACCESS_SECRET_KEY=
     Replace your_mongodb_uri and your_secret_key with your MongoDB connection string and a secret key for JWT authentication.
 
 Setting up the Frontend
+
 Navigate to the frontend directory:
 cd client
 
@@ -54,7 +61,7 @@ Install dependencies:
 npm install
 
 Configure the environment variables:
-    REACT_APP_API_URL=http://localhost:8000
+    REACT_APP_API_URL=http://localhost:3000
 
 Running the Application
 Start the backend server:
@@ -66,6 +73,7 @@ npm start
 Visit http://localhost:3000 in your web browser to see the application running.
 
 FUTURE SCOPE
+
 Integrating the website with Alan AI to record and save audio Podcasts. 
 
 PREVIEW
