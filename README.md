@@ -1,6 +1,7 @@
 MERN STACK BLOGGING WEBSITE
 
 Welcome to the MERN Stack Blogging Website! This project is a full-stack blogging application built with the MERN (MongoDB, Express.js, React.js, Node.js) stack.
+
 TABLE OF CONTENTS
     Introduction
     Features
